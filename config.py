@@ -43,7 +43,7 @@ class Settings(BaseSettings):
 settings = Settings()
 
 def get_llm():
-    model_name = "llama-3.3-70b-versatile"
+    model_name = "llama-3.1-8b-instant"
     api_key = settings.GROQ_API_KEY
     
     return ChatGroq(

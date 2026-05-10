@@ -38,7 +38,7 @@ graph TD;
 
 ### Components
 - **State**: `TicketState` (TypedDict) maintains conversation memory, diagnostics, category, priority, and confidence.
-- **Supervisor**: Intelligently routes the graph state to the next worker node using `llama-3.3-70b-versatile`.
+- **Supervisor**: Intelligently routes the graph state to the next worker node using `llama-3.1-8b-instant`.
 - **Interrupts**: Native LangGraph `checkpointer` (MemorySaver) persists threads per `ticket_id`, pausing execution safely at the `human_approval` edge.
 
 ## 2. API Layer (`api/`)
