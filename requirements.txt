@@ -1,21 +1,26 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Core API & UI
 fastapi
 uvicorn
+streamlit
+python-dotenv
+pydantic
+pydantic-settings
+
+# LLM & Orchestration
 langchain
 langgraph
 langchain-community
 langchain-groq
-chromadb
-psycopg2-binary
-python-dotenv
-pydantic
-pydantic-settings
-sqlalchemy
-streamlit
-celery
-redis
-faker
+
+# CPU-Only Embeddings (Crucial for Render/Railway free tier RAM limits)
+torch==2.3.0+cpu
 sentence-transformers
 langchain-huggingface
+
+# Database (PostgreSQL + PGVector)
+sqlalchemy
 pgvector
 psycopg[binary,pool]
 langgraph-checkpoint-postgres
