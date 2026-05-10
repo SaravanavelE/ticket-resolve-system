@@ -33,7 +33,7 @@
 | Layer              | Technology |
 |--------------------|----------|
 | **Agent Framework** | LangGraph + LangChain |
-| **LLM**            | Groq (Llama 3.3 70B) |
+| **LLM**            | Groq (Llama 3.1 8B) |
 | **RAG / Vector DB**| Chroma + Sentence Transformers |
 | **Backend**        | FastAPI + Python 3.11 |
 | **Frontend**       | Streamlit |
